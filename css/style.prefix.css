@@ -1,2 +1,32 @@
+/* 
+0-600px:        Phone
+600-900px:      Tablet portrait
+900-1200px:     Tablet landscape
+[1200-1800]     is where our normal styles apply
+1800px +:       Big desktop
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5wcmVmaXguY3NzIn0= */
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/* @import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/contact";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home"; */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNvbmNhdC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FnQkM7QUFDRDs7Ozs7Ozs7Ozs7O3VCQVl1QiIsImZpbGUiOiJzdHlsZS5wcmVmaXguY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogXHJcbjAtNjAwcHg6ICAgICAgICBQaG9uZVxyXG42MDAtOTAwcHg6ICAgICAgVGFibGV0IHBvcnRyYWl0XHJcbjkwMC0xMjAwcHg6ICAgICBUYWJsZXQgbGFuZHNjYXBlXHJcblsxMjAwLTE4MDBdICAgICBpcyB3aGVyZSBvdXIgbm9ybWFsIHN0eWxlcyBhcHBseVxyXG4xODAwcHggKzogICAgICAgQmlnIGRlc2t0b3BcclxuXHJcbiRicmVha3BvaW50IGFyZ3VlbWVudCBjaG9pY2VzOlxyXG4tIHBob25lXHJcbi0gdGFiLXBvcnRcclxuLSB0YWItbGFuZFxyXG4tIGJpZy1kZXNrdG9wXHJcblxyXG5PUkRFUjogQmFzZSArIHR5cG9ncmFwaHkgPiBnZW5lcmFsIGxheW91dCArIGdyaWQgPiBwYWdlIGxheW91dCA+IGNvbXBvbmVudHNcclxuXHJcbjFlbSA9IDE2cHhcclxuKi9cbi8qIEBpbXBvcnQgXCJiYXNlL2FuaW1hdGlvbnNcIjtcclxuQGltcG9ydCBcImJhc2UvYmFzZVwiO1xyXG5AaW1wb3J0IFwiYmFzZS90eXBvZ3JhcGh5XCI7XHJcbkBpbXBvcnQgXCJiYXNlL3V0aWxpdGllc1wiO1xyXG5cclxuQGltcG9ydCBcImNvbXBvbmVudHMvYnV0dG9uXCI7XHJcbkBpbXBvcnQgXCJjb21wb25lbnRzL2NvbnRhY3RcIjtcclxuXHJcbkBpbXBvcnQgXCJsYXlvdXQvZm9vdGVyXCI7XHJcbkBpbXBvcnQgXCJsYXlvdXQvaGVhZGVyXCI7XHJcbkBpbXBvcnQgXCJsYXlvdXQvbmF2aWdhdGlvblwiO1xyXG5cclxuQGltcG9ydCBcInBhZ2VzL2hvbWVcIjsgKi9cbiJdfQ== */

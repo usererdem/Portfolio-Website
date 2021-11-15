@@ -1,0 +1,11 @@
+.header {
+  background-color: $color-grey-dark-4;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text-box {
+    background-color: green;
+  }
+}

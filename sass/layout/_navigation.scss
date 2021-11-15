@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-grey-dark-3;
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+}

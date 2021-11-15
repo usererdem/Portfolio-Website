@@ -20,7 +20,7 @@
 
 <body>
   <!-- Social Media Links -->
-  <div class="follow-me">
+  <!-- <div class="follow-me">
     <ul>
       <li>
         <small>Follow me</small>
@@ -35,14 +35,17 @@
         <a class="instagram" target="_blank" href="instagram"></a>
       </li>
     </ul>
-    <!-- The icons that will use later -->
+    The icons that will use later
     <div class="test"><img src="img/icons.svg" alt=""></div>
-  </div>
+  </div> -->
 
   <!-- Navigation Bar -->
-  <nav class="navigation__nav">
+  <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__item"><a href="#" class="navigation__link">Logo</a></li>
+    </ul>
+
+    <ul class="navigation__list">
       <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
       <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
       <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
@@ -177,7 +180,13 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logo"></div>
+    <div class="footer__logo-box">
+
+      <picture class="footer__logo">
+          <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+              media="(max-width: 37.5em)">
+          <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+      </picture>
     <div class="footer__navigation">
       <ul class="footer_list">
         <li class="footer__item"><a href="#" class="footer__link">GITHUB</a></li>

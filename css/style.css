@@ -131,7 +131,6 @@ body {
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 0.3rem;
-    margin-bottom: 5rem;
     /* 
       animation-delay: 3s; 
       animation-iteration-count: 3;
@@ -198,6 +197,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
+
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -267,7 +269,10 @@ body {
   left: 50%;
   bottom: 20px;
   border-radius: 50px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.2s; }
+  .scroll-down:hover, .scroll-down:active {
+    transform: translateY(2px); }
   .scroll-down::before, .scroll-down::after {
     content: "";
     position: absolute;
@@ -320,7 +325,6 @@ body {
     font-weight: 300;
     color: #f7f7f7;
     text-decoration: none;
-    /* text-transform: uppercase; */
     transition: all 0.2s; }
   .navigation__link:hover, .navigation__link:active {
     color: #55c57a;

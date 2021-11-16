@@ -7,6 +7,13 @@
 
   &__text-box {
     
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

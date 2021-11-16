@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
- 
+
   <!-- My CSS Link -->
   <link rel="stylesheet" href="css/style.css">
- 
+
   <!-- Shortcut Image -->
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -57,14 +57,20 @@
   <!-- My Name and Profession -->
   <header class="header">
     <div class="header__text-box container">
-      <h1 class="heading-primary">
-        <span class="heading-primary--sub">Erdem Elvan</span>
-        <span class="heading-primary--main">Front-end Developer</span>
+      <h1 class="heading-primary hide">
+        <span class="heading-primary--sub text">Erdem Elvan</span>
       </h1>
-
-      <a href="#" class="btn btn--green">Show more</a>
-      <a href="#" class="btn btn--green">Let's talk!</a>
+      <h1 class="heading-primary hide">
+        <span class="heading-primary--main text">Front-end Developer</span>
+      </h1>
+      
+      
     </div>
+    <div class="header__button-box container">
+      <a href="#" class="btn btn--white btn--animated">Show more</a>
+      <a href="#" class="btn btn--green btn--animated">Let's talk!</a>
+    </div>
+
     <a href="#about">
       <div class="scroll-down"></div>
     </a>
@@ -186,22 +192,29 @@
     <div class="footer__logo-box ">
 
       <picture class="footer__logo">
-          <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
-              media="(max-width: 37.5em)">
-          <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
       </picture>
-    <div class="footer__navigation">
-      <ul class="footer_list">
-        <li class="footer__item"><a href="#" class="footer__link">GITHUB</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">LINKEDIN</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">instagram</a></li>
-      </ul>
-    </div>
-    <div class="footer__copyright">
-      <p class="footer__text">Built this <a href="#" class="footer__link">website</a> as a portfolio website. Copyright
-        &copy; by Erdem Elvan </p>
-    </div>
+      <div class="footer__navigation">
+        <ul class="footer_list">
+          <li class="footer__item"><a href="#" class="footer__link">GITHUB</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">LINKEDIN</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__text">Built this <a href="#" class="footer__link">website</a> as a portfolio website.
+          Copyright
+          &copy; by Erdem Elvan </p>
+      </div>
   </footer>
+  <!-- gsap script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- my js files -->
+  <script src="intro.js"></script>
 </body>
 
 </html>

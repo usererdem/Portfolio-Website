@@ -1,13 +1,16 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $color-grey-dark-4;
   padding-right: 1rem;
-  padding-top: 1rem;
+  /* padding-top: 0.5rem; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.3s ease-out;
+  z-index: 1000;
   
   
   &__list {
@@ -38,5 +41,17 @@
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(5deg) scale(1.2);
     }
+  }
+
+  &__logo {
+    &:link,
+    &:visited {
+      font-size: 4rem;
+    }
+  }
+
+  &--hidden {
+    transform: translateY(-88px);
+    opacity: 0.5;
   }
 }

@@ -213,6 +213,17 @@ body {
     .u-margin-right-medium {
       margin-right: 3rem !important; } }
 
+.ball {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #7ed56f, #28b485, #2998ff, #5643fa);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  transition: transform 1s; }
+
 .btn {
   margin-right: 1rem; }
   .btn, .btn:link, .btn:visited {
@@ -221,7 +232,7 @@ body {
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 1rem;
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
     border: none;
@@ -230,7 +241,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
+      transform: scaleX(1.2) scaleY(1.4);
       opacity: 0; }
   .btn:active, .btn:focus {
     outline: none;
@@ -256,9 +267,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .btn--animated {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
 
 .scroll-down {
@@ -270,7 +281,9 @@ body {
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  animation: moveInBottom 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards; }
   .scroll-down:hover, .scroll-down:active {
     transform: translateY(2px); }
   .scroll-down::before, .scroll-down::after {
@@ -305,13 +318,16 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #1C1D25;
   padding-right: 1rem;
-  padding-top: 1rem;
+  /* padding-top: 0.5rem; */
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.3s ease-out;
+  z-index: 1000; }
   .navigation__list {
     display: flex;
     list-style: none;
@@ -330,6 +346,11 @@ body {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.2); }
+  .navigation__logo:link, .navigation__logo:visited {
+    font-size: 4rem; }
+  .navigation--hidden {
+    transform: translateY(-88px);
+    opacity: 0.5; }
 
 .footer {
   display: flex;

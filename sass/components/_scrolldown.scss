@@ -8,11 +8,13 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s;
-  
+
+  animation: moveInBottom 0.5s ease-out 1.5s;
+  animation-fill-mode: backwards;
   &:hover,
-    &:active{
-      transform: translateY(2px);
-    }
+  &:active {
+    transform: translateY(2px);
+  }
 
   &::before,
   &::after {

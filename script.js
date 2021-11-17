@@ -19,18 +19,41 @@ window.addEventListener("scroll", () => {
 /* ---- Chasing Ball ---- */
 const ball = document.getElementById("chasing");
 
-document.addEventListener(
+/* document.addEventListener(
   "click",
   function (ev) {
-    ball.style.transform = "translateY(" + (window.scrollY + ev.clientY - 25) + "px)";
+    ball.style.transform = "translateY(" + (window.scrollY + ev.clientY - 100) + "px)";
     ball.style.transform += "translateX(" + (ev.clientX - 25) + "px)";
+    
   },
   false
 );
 
-window.addEventListener('scroll', () => {
-  ball.style.opacity = 1
-  if (window.scrollY > 50) {
-    ball.style.opacity = 0.4
+window.addEventListener("scroll", () => {
+  ball.style.opacity = 1;
+  if (window.scrollY > 50 && window.scrollY < 500) {
+    ball.style.opacity = 0.7;
+  } else if (window.scrollY >= 500) {
+    ball.style.opacity = 0.4;
   }
-})
+}); */
+
+document.addEventListener(
+  "click",
+  function (ev) {
+    ball.style.transform = "translateY(" + (window.scrollY + ev.clientY - 100) + "px)";
+    ball.style.transform += "translateX(" + (ev.clientX - 25) + "px)";
+    ball.style.opacity = 0.4;
+  },
+  false
+);
+
+window.addEventListener("scroll", () => {
+  
+  if (window.scrollY > 50 && window.scrollY < 500) {
+    ball.style.opacity = 1;
+  } else if (window.scrollY >= 500) {
+    ball.style.opacity = 0.8;
+  }
+});
+

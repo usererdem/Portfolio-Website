@@ -53,5 +53,9 @@
   &--hidden {
     transform: translateY(-88px);
     opacity: 0.5;
+
+    @include respond(big-desktop) {
+      opacity: 0;
+    }
   }
 }

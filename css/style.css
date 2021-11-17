@@ -351,6 +351,9 @@ body {
   .navigation--hidden {
     transform: translateY(-88px);
     opacity: 0.5; }
+    @media only screen and (min-width: 112.5em) {
+      .navigation--hidden {
+        opacity: 0; } }
 
 .footer {
   display: flex;

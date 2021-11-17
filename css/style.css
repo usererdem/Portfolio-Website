@@ -221,8 +221,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0 auto;
-  transition: transform 1s; }
+  opacity: 0;
+  transition: all 1s; }
 
 .btn {
   margin-right: 1rem; }

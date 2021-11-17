@@ -27,3 +27,10 @@ document.addEventListener(
   },
   false
 );
+
+window.addEventListener('scroll', () => {
+  ball.style.opacity = 1
+  if (window.scrollY > 50) {
+    ball.style.opacity = 0.4
+  }
+})

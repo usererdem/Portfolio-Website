@@ -15,4 +15,16 @@
       flex-direction: column;
     }
   }
+
+  @include respond(phone) {
+    &__button-box {
+      display: flex;
+      flex-direction: column;
+    }
+    &__button-box a {
+      margin-bottom: 1.5rem;
+      max-width: 180px;
+    }
+  }
+  
 }

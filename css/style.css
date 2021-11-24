@@ -361,6 +361,13 @@ body {
     .header__text-box--flex {
       display: flex;
       flex-direction: column; }
+  @media only screen and (max-width: 37.5em) {
+    .header__button-box {
+      display: flex;
+      flex-direction: column; }
+    .header__button-box a {
+      margin-bottom: 1.5rem;
+      max-width: 180px; } }
 
 .navigation {
   display: flex;
@@ -503,7 +510,7 @@ body {
   background-image: linear-gradient(to right bottom, #55c57a, #286313); }
   @media only screen and (max-width: 56.25em) {
     .section-contact {
-      padding: 10rem 0; } }
+      padding: 15rem 0; } }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nature.jpg);

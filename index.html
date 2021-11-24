@@ -82,7 +82,7 @@
   <main>
     <section id="about" class="section-about">
       <div>
-        <h2 class="heading-secondary">
+        <h2 class="heading-secondary heading-about">
           Hello, I'm Erdem Elvan
         </h2>
       </div>
@@ -157,35 +157,32 @@
     </section>
 
     <section id="contact" class="section-contact">
-      <div class="contact">
-        <div class="contact__form">
-          <form action="#" class="form">
-            <div class="u-margin-bottom-medium">
-              <h2 class="heading-secondary">
-                Contact Me
-              </h2>
-            </div>
-
-            <div class="form__group">
-              <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-              <label for="name" class="form__label">Full name</label>
-            </div>
-
-            <div class="form__group">
-              <input type="email" class="form__input" placeholder="Email address" id="email" required>
-              <label for="email" class="form__label">Email address</label>
-            </div>
-
-            <div class="form__group">
-              <textarea id="message" class="form__message" name="message" spellcheck="false"></textarea>
-              <p>üstteki efekti buna da uyarla</p>
-            </div>
-
-            <div class="form__group">
-              <button class="btn">Send Message &rarr;</button>
-            </div>
-
-          </form>
+      <div class="container-contact">
+        <div class="contact">
+          <div class="contact__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Contact Me
+                </h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+              <div class="form__group">
+                <textarea id="message" class="form__input form__message" placeholder="Your message" name="message" spellcheck="false"></textarea>
+                <label for="message" class="form__label">Your message</label>
+              </div>
+              <div class="form__group">
+                <button class="btn btn--green">Send Message<!--  &rarr; --></button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

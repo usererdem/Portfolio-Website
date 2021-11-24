@@ -69,6 +69,17 @@
     }
   }
 
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+
   .intro {
     background: $color-grey-dark-4;
     position: fixed;

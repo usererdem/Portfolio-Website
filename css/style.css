@@ -61,6 +61,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: 90%;
     opacity: 0; } }
 
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(10px, 0); } }
+
 .intro {
   background: #1C1D25;
   position: fixed;
@@ -272,6 +279,46 @@ body {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -432,39 +479,44 @@ body {
   margin: 0 auto;
   max-width: 95rem; }
 
+.container-contact {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 120rem; }
+
 .section-about {
-  background-color: #f7f7f7;
+  background-color: #eee;
   padding: 25rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
 
 .section-projects {
-  background-color: #f7f7f7;
+  background-color: #1C1D25;
   padding: 25rem 0 15rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-projects {
       padding: 20rem 0 10rem 0; } }
 
 .section-contact {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  padding: 7rem 0;
+  background-image: linear-gradient(to right bottom, #55c57a, #286313); }
   @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 0; } }
 
 .contact {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nature.jpg);
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nature.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .contact {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nature.jpg); } }
   .contact__form {
     width: 50%;
     padding: 6rem; }

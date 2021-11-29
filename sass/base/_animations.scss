@@ -42,6 +42,18 @@
   }
 }
 
+@keyframes moveInBottomScroll {
+  0% {
+      opacity: 0;
+      transform: translate(-13px, 3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(-13px,0);
+  }
+}
+
 @keyframes bg-animation {
   0% {
       background-position: left;

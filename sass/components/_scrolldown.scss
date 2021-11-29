@@ -9,11 +9,13 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  animation: moveInBottom 0.5s ease-out 1.5s;
+  animation: moveInBottomScroll 0.5s ease-out 1.5s;
   animation-fill-mode: backwards;
+  transform: translate(-13px, 0);
+
   &:hover,
   &:active {
-    transform: translateY(2px);
+    transform: translate(-13px, 2px);
   }
 
   &::before,

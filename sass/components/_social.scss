@@ -1,0 +1,49 @@
+.follow-me {
+  z-index: 1009;
+  position: fixed;
+  left: 0;
+
+  top: calc(50% - (275px / 2));
+  width: 55px;
+  height: 275px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 55px;
+    padding-left: 20px;
+    margin-left: -20px;
+    transition: transform 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+  }
+
+  span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    /* background: url(../../img/icons.svg) no-repeat 0 1px; */
+    background-size: 100% auto;
+    text-indent: -9999em;
+  }
+
+  &__github {
+    background-color: $color-github;
+
+    span {
+      background-position: 0 -35px;
+    }
+  }
+
+  &__linkedin {
+    background-color: $color-linkedin;
+
+    span {
+      background-position: 0 -140px;
+    }
+  }
+
+  &__instagram {
+    background-color: $color-instagram;
+  }
+}

@@ -18,10 +18,13 @@
     list-style: none;
     gap: 1rem;
     margin: 0 auto;
+    
   }
 
   &__item {
     margin: 1rem;
+    display: flex;
+    align-items: center;
   }
 
   &__link {

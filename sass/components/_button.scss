@@ -69,4 +69,17 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+
+  @include respond(phone) {
+    &,
+    &:link,
+    &:visited {
+      font-size: $big-font-size;
+    }
+
+    &--header {
+      margin-bottom: 1.5rem;
+      max-width: 180px;
+    }
+  }
 }

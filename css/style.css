@@ -289,6 +289,12 @@ body {
   .btn--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
+  @media only screen and (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 2rem; }
+    .btn--header {
+      margin-bottom: 1.5rem;
+      max-width: 180px; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -368,7 +374,25 @@ body {
   text-align: center;
   top: calc(50% - (275px / 2));
   width: 55px;
-  height: 180px; }
+  height: 180px;
+  /* @include respond(phone) {
+    
+      bottom: 35px;
+      width: 100%;
+      height: auto;
+      top: auto;
+      left: 0;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+    
+
+     ul {
+      display: flex;
+      flex-direction: row;
+    }
+  } */ }
   .follow-me a:hover {
     -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(-20px, 0, 0); }
@@ -416,10 +440,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .header__button-box {
       display: flex;
-      flex-direction: column; }
-    .header__button-box a {
-      margin-bottom: 1.5rem;
-      max-width: 180px; } }
+      flex-direction: column; } }
 
 .navigation {
   display: flex;

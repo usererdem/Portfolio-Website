@@ -9,8 +9,8 @@
   height: 180px;
 
   & a:hover {
-    -webkit-transform: translate3d(20px,0,0);
-    transform: translate3d(-20px,0,0);
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
   }
 
   a {
@@ -41,7 +41,6 @@
 
   &__github {
     background: $color-github;
-    
 
     span {
       background-position: 0 -35px;
@@ -59,4 +58,23 @@
   &__instagram {
     background: $color-instagram;
   }
+
+  /* @include respond(phone) {
+    
+      bottom: 35px;
+      width: 100%;
+      height: auto;
+      top: auto;
+      left: 0;
+      text-align: left;
+
+      display: flex;
+      flex-direction: row;
+    
+
+     ul {
+      display: flex;
+      flex-direction: row;
+    }
+  } */
 }

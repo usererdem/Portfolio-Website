@@ -155,7 +155,7 @@ body {
       */ }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
+        letter-spacing: 0.7rem;
         font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
@@ -364,36 +364,42 @@ body {
 .follow-me {
   z-index: 1009;
   position: fixed;
-  left: 0;
+  right: 0;
+  text-align: center;
   top: calc(50% - (275px / 2));
   width: 55px;
-  height: 275px; }
+  height: 180px; }
+  .follow-me a:hover {
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
   .follow-me a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 75px;
     height: 55px;
-    padding-left: 20px;
-    margin-left: -20px;
+    padding-right: 20px;
+    margin-right: -20px;
     transition: transform 425ms cubic-bezier(0.05, 0.65, 0.18, 1); }
+  .follow-me li small {
+    font-size: 1.7rem; }
   .follow-me span {
     display: block;
     width: 35px;
     height: 35px;
-    /* background: url(../../img/icons.svg) no-repeat 0 1px; */
+    background: url(../img/icons.svg) no-repeat 0 1px;
     background-size: 100% auto;
     text-indent: -9999em; }
   .follow-me__github {
-    background-color: #3F444B; }
+    background: #3F444B; }
     .follow-me__github span {
       background-position: 0 -35px; }
   .follow-me__linkedin {
-    background-color: #0077B5; }
+    background: #0077B5; }
     .follow-me__linkedin span {
       background-position: 0 -140px; }
   .follow-me__instagram {
-    background-color: radial-gradient(137.27% 137.27% at 9.89% 100%, #FDF497 0%, #FDF497 7.29%, #FD5949 42.71%, #D6249F 63.54%, #285AEB 100%); }
+    background: radial-gradient(137.27% 137.27% at 9.89% 100%, #FDF497 0%, #FDF497 7.29%, #FD5949 42.71%, #D6249F 63.54%, #285AEB 100%); }
 
 .header {
   background-color: #1C1D25;

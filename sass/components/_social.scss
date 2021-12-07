@@ -1,11 +1,17 @@
 .follow-me {
   z-index: 1009;
   position: fixed;
-  left: 0;
+  right: 0;
+  text-align: center;
 
   top: calc(50% - (275px / 2));
   width: 55px;
-  height: 275px;
+  height: 180px;
+
+  & a:hover {
+    -webkit-transform: translate3d(20px,0,0);
+    transform: translate3d(-20px,0,0);
+  }
 
   a {
     display: flex;
@@ -13,22 +19,29 @@
     justify-content: center;
     width: 75px;
     height: 55px;
-    padding-left: 20px;
-    margin-left: -20px;
+    padding-right: 20px;
+    margin-right: -20px;
     transition: transform 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
+  }
+
+  li {
+    small {
+      font-size: 1.7rem;
+    }
   }
 
   span {
     display: block;
     width: 35px;
     height: 35px;
-    /* background: url(../../img/icons.svg) no-repeat 0 1px; */
+    background: url(../img/icons.svg) no-repeat 0 1px;
     background-size: 100% auto;
     text-indent: -9999em;
   }
 
   &__github {
-    background-color: $color-github;
+    background: $color-github;
+    
 
     span {
       background-position: 0 -35px;
@@ -36,7 +49,7 @@
   }
 
   &__linkedin {
-    background-color: $color-linkedin;
+    background: $color-linkedin;
 
     span {
       background-position: 0 -140px;
@@ -44,6 +57,6 @@
   }
 
   &__instagram {
-    background-color: $color-instagram;
+    background: $color-instagram;
   }
 }

@@ -20,7 +20,7 @@ body {
       letter-spacing: 0.3rem;
       
       @include respond(phone) {
-          letter-spacing: 1rem;
+          letter-spacing: 0.7rem;
           font-family: 5rem;
       }
 

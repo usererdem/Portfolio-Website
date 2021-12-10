@@ -5,8 +5,8 @@
   text-align: center;
 
   top: calc(50% - (275px / 2));
-  width: 55px;
-  height: 180px;
+  width: 85px;
+  height: 280px;
 
   & a:hover {
     -webkit-transform: translate3d(20px, 0, 0);
@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 55px;
+    width: 105px;
+    height: 85px;
     padding-right: 20px;
     margin-right: -20px;
     transition: transform 425ms cubic-bezier(0.05, 0.65, 0.18, 1);
@@ -26,14 +26,14 @@
 
   li {
     small {
-      font-size: 1.7rem;
+      font-size: 1.3rem;
     }
   }
 
   span {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 65px;
+    height: 65px;
     background: url(../img/icons.svg) no-repeat 0 1px;
     background-size: 100% auto;
     text-indent: -9999em;
@@ -43,7 +43,7 @@
     background: $color-github;
 
     span {
-      background-position: 0 -35px;
+      background-position: 0 -65px;
     }
   }
 
@@ -51,7 +51,7 @@
     background: $color-linkedin;
 
     span {
-      background-position: 0 -140px;
+      background-position: 0 -260px;
     }
   }
 
@@ -59,6 +59,79 @@
     background: $color-instagram;
   }
 
+  @include respond(tab-port) {
+    width: 65px;
+    height: 185px;
+
+    a {
+      width: 85px;
+      height: 65px;
+      padding-right: 20px;
+      margin-right: -20px;
+    }
+
+    span {
+      width: 45px;
+      height: 45px;
+    }
+
+    &__github {
+      background: $color-github;
+
+      span {
+        background-position: 0 -45px;
+      }
+    }
+
+    &__linkedin {
+      background: $color-linkedin;
+
+      span {
+        background-position: 0 -180px;
+      }
+    }
+
+    &__instagram {
+      background: $color-instagram;
+    }
+  }
+
+  @include respond(phone) {
+    width: 55px;
+    height: 185px;
+
+    a {
+      width: 75px;
+      height: 55px;
+      padding-right: 20px;
+      margin-right: -20px;
+    }
+
+    span {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__github {
+      background: $color-github;
+
+      span {
+        background-position: 0 -35px;
+      }
+    }
+
+    &__linkedin {
+      background: $color-linkedin;
+
+      span {
+        background-position: 0 -140px;
+      }
+    }
+
+    &__instagram {
+      background: $color-instagram;
+    }
+  }
   /* @include respond(phone) {
     
       bottom: 35px;

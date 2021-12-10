@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  
+
   <!-- Social Media Links -->
   <div class="follow-me">
     <ul>
@@ -32,12 +32,14 @@
         </a>
       </li>
       <li>
-        <a class="follow-me__linkedin" target="_blank" href="https://www.linkedin.com/in/erdem-elvan-7198a818a/" title="Connect on LinkedIn">
+        <a class="follow-me__linkedin" target="_blank" href="https://www.linkedin.com/in/erdem-elvan-7198a818a/"
+          title="Connect on LinkedIn">
           <span>Connect on LinkedIn</span>
         </a>
       </li>
       <li>
-        <a class="follow-me__instagram" target="_blank" href="https://www.instagram.com/erdemcodes/" title="Follow on Instagram">
+        <a class="follow-me__instagram" target="_blank" href="https://www.instagram.com/erdemcodes/"
+          title="Follow on Instagram">
           <span>Follow on Instagram</span>
         </a>
       </li>
@@ -45,19 +47,27 @@
   </div>
 
   <!-- Navigation Bar -->
-  <nav class="navigation">
-    <ul class="navigation__list ">
-      <li class="navigation__item"><a href="#" class="navigation__link navigation__logo">Logo</a></li>
-    </ul>
+  <div class="nav-container">
+    <nav class="navigation">
+      <ul class="navigation__list ">
+        <li class="navigation__item"><a href="#" class="navigation__logo">Logo</a></li>
+      </ul>
 
-    <ul class="navigation__list">
-      <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
-      <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-      <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
-      <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-      <li class="navigation__item"><a href="#" class="navigation__link">Dark Mode</a></li>
-    </ul>
-  </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul class="navigation__list navigation__menu">
+        <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Dark Mode</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- My Name and Profession -->
   <header id="home" class="header">
@@ -70,8 +80,8 @@
           <span class="heading-primary--main text">Front-end Developer</span>
         </h1>
       </div>
-      
-      
+
+
     </div>
     <div class="header__button-box container u-margin-top-medium">
       <a href="#about" class="u-margin-right-medium btn btn--white btn--animated btn--header">Show more</a>
@@ -185,11 +195,14 @@
                 <label for="email" class="form__label">Email address</label>
               </div>
               <div class="form__group">
-                <textarea id="message" class="form__input form__message" placeholder="Your message" name="message" spellcheck="false"></textarea>
+                <textarea id="message" class="form__input form__message" placeholder="Your message" name="message"
+                  spellcheck="false"></textarea>
                 <label for="message" class="form__label">Your message</label>
               </div>
               <div class="form__group">
-                <button class="btn btn--green">Send Message<!--  &rarr; --></button>
+                <button class="btn btn--green">Send Message
+                  <!--  &rarr; -->
+                </button>
               </div>
             </form>
           </div>
@@ -221,7 +234,7 @@
 
   <!-- Ball With Animation -->
   <div id="chasing" class="ball"></div>
- 
+
   <!-- gsap script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
     integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="

@@ -451,8 +451,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .follow-me {
       width: 55px;
-      height: 185px;
-      top: 32%; }
+      height: 185px; }
       .follow-me a {
         width: 75px;
         height: 55px;

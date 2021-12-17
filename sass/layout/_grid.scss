@@ -18,11 +18,16 @@
   @include clearfix;
 }
 
-/* .grid {
+/* about section card crid */
+.grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 50px;
-} */
+  gap: 40px;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
 
 .container {
   width: 80%;

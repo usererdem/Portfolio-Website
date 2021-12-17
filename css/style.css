@@ -233,10 +233,43 @@ body {
     .u-margin-right-medium {
       margin-right: 3rem !important; } }
 
-.grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 50px; }
+.about {
+  background-color: #1C1D25;
+  padding: 5rem 3rem;
+  border-radius: 0.5rem; }
+  .about__heading {
+    margin-bottom: 2rem; }
+  .about__img-box {
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    min-width: 200px; }
+  .about__profile-img {
+    max-width: 100%; }
+  .about__text {
+    color: #a4abc0;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .about__resume {
+    margin-top: 2rem; }
+  .about__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center; }
+    .about__list--item {
+      margin: 0 auto; }
+    .about__list--icon {
+      height: 60px;
+      width: 60px; }
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .ball {
   border-radius: 25px;
@@ -431,6 +464,28 @@ body {
       background-position: 0 -260px; }
   .follow-me__instagram {
     background: radial-gradient(137.27% 137.27% at 9.89% 100%, #FDF497 0%, #FDF497 7.29%, #FD5949 42.71%, #D6249F 63.54%, #285AEB 100%); }
+  @media only screen and (max-width: 75em) {
+    .follow-me {
+      width: 75px;
+      height: 185px; }
+      .follow-me a {
+        width: 95px;
+        height: 75px;
+        padding-right: 20px;
+        margin-right: -20px; }
+      .follow-me span {
+        width: 55px;
+        height: 55px; }
+      .follow-me__github {
+        background: #3F444B; }
+        .follow-me__github span {
+          background-position: 0 -55px; }
+      .follow-me__linkedin {
+        background: #0077B5; }
+        .follow-me__linkedin span {
+          background-position: 0 -220px; }
+      .follow-me__instagram {
+        background: radial-gradient(137.27% 137.27% at 9.89% 100%, #FDF497 0%, #FDF497 7.29%, #FD5949 42.71%, #D6249F 63.54%, #285AEB 100%); } }
   @media only screen and (max-width: 56.25em) {
     .follow-me {
       width: 65px;
@@ -663,11 +718,15 @@ body {
     display: table;
     clear: both; }
 
-/* .grid {
+/* about section card crid */
+.grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 50px;
-} */
+  gap: 40px; }
+  @media only screen and (max-width: 56.25em) {
+    .grid {
+      display: block; } }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -680,10 +739,10 @@ body {
 
 .section-about {
   background-color: #eee;
-  padding: 25rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 15rem 0; } }
 
 .section-projects {
   background-color: #1C1D25;

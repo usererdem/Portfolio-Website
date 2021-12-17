@@ -59,6 +59,43 @@
     background: $color-instagram;
   }
 
+  @include respond(tab-land) {
+    width: 75px;
+    height: 185px;
+
+    a {
+      width: 95px;
+      height: 75px;
+      padding-right: 20px;
+      margin-right: -20px;
+    }
+
+    span {
+      width: 55px;
+      height: 55px;
+    }
+
+    &__github {
+      background: $color-github;
+
+      span {
+        background-position: 0 -55px;
+      }
+    }
+
+    &__linkedin {
+      background: $color-linkedin;
+
+      span {
+        background-position: 0 -220px;
+      }
+    }
+
+    &__instagram {
+      background: $color-instagram;
+    }
+  }
+
   @include respond(tab-port) {
     width: 65px;
     height: 185px;

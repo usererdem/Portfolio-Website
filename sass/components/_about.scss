@@ -1,5 +1,56 @@
-.grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 50px;
+.about {
+  background-color: $color-grey-dark-4;
+  padding: 5rem 3rem;
+  border-radius: 0.5rem;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__img-box {
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    min-width: 200px;
+  }
+
+  &__profile-img {
+    max-width: 100%;
+  }
+
+  &__text {
+    color: $color-slate;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__resume {
+    margin-top: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    &--item {
+      margin: 0 auto;
+      
+    }
+
+    &--icon {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

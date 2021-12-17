@@ -1,3 +1,41 @@
+/* about section card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "a a a b b"
+    "d d d d c";
+  grid-gap: 30px;
+
+  .about__text-layout {
+    grid-area: a;
+  }
+
+  .about__img-box {
+    grid-area: b;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .about__resume {
+    grid-area: c;
+    justify-self: end;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    
+  }
+
+  .about__list {
+    grid-area: d;
+  }
+
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
 .about {
   background-color: $color-grey-dark-4;
   padding: 5rem 3rem;
@@ -25,22 +63,17 @@
     margin-bottom: 2rem;
   }
 
-  &__resume {
-    margin-top: 2rem;
-  }
-
   &__list {
     display: flex;
     margin: 0;
     padding: 0;
-    
+
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
 
     &--item {
-      margin: 0 auto;
-      
+      margin: 0 auto 0 0;
     }
 
     &--icon {
@@ -48,9 +81,4 @@
       width: 60px;
     }
   }
-}
-.wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }

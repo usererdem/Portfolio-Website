@@ -51,6 +51,15 @@
       background-color: $color-primary;
     }
   }
+
+  &--green-gradient {
+    background: $color-primary-gradient;
+    color: $color-white;
+
+    &::after {
+      background: $color-primary-gradient;
+    }
+  }
   
   &::after {
     content: "";

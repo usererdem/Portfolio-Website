@@ -23,6 +23,7 @@
     margin: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   &__link {
@@ -52,6 +53,7 @@
       text-decoration: none;
       transition: all 0.2s;
       font-weight: 300;
+      margin-left: 1rem;
     }
 
     &:hover,
@@ -115,7 +117,7 @@
 
   #mobile-menu {
     position: absolute;
-    top: 20%;
+    top: 21.5%;
     right: 5%;
     cursor: pointer;
     transform: translate(5%, 20%);

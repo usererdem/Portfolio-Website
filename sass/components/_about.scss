@@ -23,8 +23,6 @@
     justify-self: end;
     align-self: center;
     margin-right: 0;
-    margin-bottom: 0.5rem;
-    
   }
 
   .about__list {
@@ -67,6 +65,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 
     border-radius: 2rem;
     justify-content: center;
@@ -81,4 +80,57 @@
       width: 60px;
     }
   }
+
+  &__resume {
+    margin-bottom: 0.5rem;
+  }
+
+  @include respond(tab-port) {
+    text-align: center;
+    /* background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-dark-4, 0.8), 
+      rgba($color-grey-dark-4, 0.8)), url(../img/profileimg.jpeg); */
+    
+
+    &__img-box {
+      margin: 0 auto;
+      /* display: none; */
+    }
+
+    &__resume {
+      margin: 3rem 0;
+    }
+
+    &__list {
+      &--item {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-dark-4, 0.8), 
+      rgba($color-grey-dark-3, 0.8)), url(../img/profileimg.jpeg);
+
+    &__text-layout {
+      background: rgba($color-grey-light-1, 0.1);
+      padding: 2rem;
+    }
+
+    &__text {
+      color: $color-white;
+    }
+    &__img-box {
+      display: none;
+    }
+  }
+
 }

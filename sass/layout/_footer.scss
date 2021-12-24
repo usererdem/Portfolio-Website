@@ -11,26 +11,20 @@
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
-
-    @include respond(tab-port) {
-      margin-bottom: 6rem;
-    }
+    flex-direction: column;
   }
 
-  &__logo {
+  /*  &__logo {
     width: 15rem;
     height: auto;
-  }
+  } */
 
   &__navigation {
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
     display: inline-block;
-
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-    }
+    padding-bottom: 3rem;
+    width: 100%;
   }
 
   &__list {
@@ -41,7 +35,7 @@
     display: inline-block;
 
     &:not(:last-child) {
-      margin-right: 1.5rem;
+      margin-right: 2rem;
     }
   }
 
@@ -54,29 +48,99 @@
       text-transform: uppercase;
       display: inline-block;
       transition: all 0.2s;
+      font-size: $big-font-size;
+      padding: 1rem 2rem;
     }
 
     &:hover,
     &:active {
-      color: $color-primary;
+      /* color: $color-primary; */
       box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       transform: rotate(5deg) scale(1.3);
+    }
+
+    &--logo {
+      &:link,
+      &:visited {
+        font-size: $biggest-font-size;
+        font-weight: 300;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+      }
+    }
+
+    &--github {
+      &:hover,
+      &:active {
+        color: $color-grey-light-1;
+        background: $color-github;
+      }
+    }
+
+    &--linkedin {
+      &:hover,
+      &:active {
+        color: $color-grey-light-1;
+        background: $color-linkedin;
+      }
+    }
+
+    &--instagram {
+      &:hover,
+      &:active {
+        color: $color-grey-light-1;
+        background: $color-instagram;
+      }
+    }
+
+    &--website {
+      &:link,
+      &:visited {
+        padding: 0 0.2rem;
+      }
     }
   }
 
   &__copyright {
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
-    width: 80%;
-    float: right;
-
-    @include respond(tab-port) {
-      width: 100%;
-      float: none;
-    }
   }
 
   &__text {
     color: orange;
+  }
+
+  @include respond(tab-port) {
+    &__copyright {
+      width: 100%;
+      float: none;
+    }
+
+    &__navigation {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__logo-box {
+      margin-bottom: 6rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
   }
 }

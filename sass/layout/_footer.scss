@@ -115,12 +115,11 @@
 
   @include respond(tab-port) {
     &__copyright {
-      width: 100%;
-      float: none;
+      margin: 0 auto;
     }
 
     &__navigation {
-      width: 100%;
+      width: 80%;
       text-align: center;
     }
 
@@ -130,6 +129,10 @@
   }
 
   @include respond(phone) {
+    &__logo-box {
+      width: 80%;
+    }
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -140,6 +143,7 @@
     &__item {
       &:not(:last-child) {
         margin-right: 0;
+        margin-bottom: 1rem;
       }
     }
   }

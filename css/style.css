@@ -789,21 +789,23 @@ body {
     color: orange; }
   @media only screen and (max-width: 56.25em) {
     .footer__copyright {
-      width: 100%;
-      float: none; }
+      margin: 0 auto; }
     .footer__navigation {
-      width: 100%;
+      width: 80%;
       text-align: center; }
     .footer__logo-box {
       margin-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
+    .footer__logo-box {
+      width: 80%; }
     .footer__list {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
     .footer__item:not(:last-child) {
-      margin-right: 0; } }
+      margin-right: 0;
+      margin-bottom: 1rem; } }
 
 .row {
   max-width: 95rem;

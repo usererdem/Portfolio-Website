@@ -782,6 +782,8 @@ body {
     background: radial-gradient(137.27% 137.27% at 9.89% 100%, #fdf497 0%, #fdf497 7.29%, #fd5949 42.71%, #d6249f 63.54%, #285aeb 100%); }
   .footer__link--website:link, .footer__link--website:visited {
     padding: 0 0.2rem; }
+  .footer__link--website:hover, .footer__link--website:active {
+    color: #55c57a; }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem; }

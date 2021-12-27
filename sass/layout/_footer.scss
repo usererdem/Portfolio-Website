@@ -101,6 +101,11 @@
       &:visited {
         padding: 0 0.2rem;
       }
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+      }
     }
   }
 

@@ -3,7 +3,7 @@
   padding: 10rem 0;
 
   @include respond(tab-port) {
-      padding: 10rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -12,7 +12,7 @@
   padding: 25rem 0 15rem 0;
 
   @include respond(tab-port) {
-      padding: 20rem 0 10rem 0;
+    padding: 20rem 0 10rem 0;
   }
 }
 
@@ -21,7 +21,6 @@
   background-image: linear-gradient(to right bottom, $color-primary, $color-primary-darker);
 
   @include respond(tab-port) {
-      padding: 15rem 0;
+    padding: 15rem 0;
   }
 }
-

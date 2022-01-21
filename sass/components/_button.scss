@@ -92,3 +92,71 @@
     }
   }
 }
+
+.project-btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    transition: all 0.2s;
+    font-size: $default-font-size;
+    text-align: center;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-grey-dark-3;
+    color: $color-grey-light-2;
+
+    &::after {
+      background-color: $color-grey-dark-3;
+    }
+  }
+
+  &--green-gradient {
+    background: $color-primary-gradient;
+    color: $color-grey-light-2;
+
+    &::after {
+      background: $color-primary-gradient;
+    }
+  }
+
+  @include respond(phone) {
+    &,
+    &:link,
+    &:visited {
+      font-size: $big-font-size;
+    }
+
+    &--header {
+      margin-bottom: 1.5rem;
+      max-width: 180px;
+    }
+  }
+}

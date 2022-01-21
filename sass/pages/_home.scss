@@ -21,6 +21,11 @@
   @include respond(big-desktop) {
     padding: 0;
   }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+  
   /* @include respond(tab-land) {
     padding: 3rem 0;
     display: block;

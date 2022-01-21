@@ -989,7 +989,7 @@ body {
   } */ }
   @media only screen and (min-width: 112.5em) {
     .section-projects {
-      padding: 0 0 25rem 0; } }
+      padding: 0; } }
 
 .section-contact {
   padding: 7rem 0;

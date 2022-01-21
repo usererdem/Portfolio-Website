@@ -19,7 +19,7 @@
     ) [center-end] minmax(6rem, 1fr) [full-end];
 
   @include respond(big-desktop) {
-    padding: 0 0 25rem 0;
+    padding: 0;
   }
   /* @include respond(tab-land) {
     padding: 3rem 0;

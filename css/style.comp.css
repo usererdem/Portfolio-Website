@@ -142,17 +142,12 @@ body {
 
 .heading-primary {
   color: #fff;
-  /*  text-transform: uppercase; */
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 0.3rem;
-    /* 
-      animation-delay: 3s; 
-      animation-iteration-count: 3;
-      */ }
+    letter-spacing: 0.3rem; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 0.5rem;
@@ -863,11 +858,7 @@ body {
   background-color: #1c1d25;
   padding: 10rem 0;
   color: #f7f7f7;
-  font-size: 1.4rem;
-  /*  &__logo {
-    width: 15rem;
-    height: auto;
-  } */ }
+  font-size: 1.4rem; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem;

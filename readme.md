@@ -12,17 +12,24 @@ To run this project, you'll need the following software:
 ## Features
 
 As a user you can:
-- On navigation bar, you can navigate through website by clicking on:
-1. Home 
-2. About
-3. Projects
-4. Contact
-- Click on social media icons on the right side for visit my social media accounts
-- Website opens with an animation
-- Check my projects in GitHub or see them live
-- Have fun with the ball chasing your mouse clicks
 - Download my Resume
 - Send me a message
+- Navigate through website from navigation bar
+- Visit my social media accounts
+- Check my projects in GitHub or see them live
+- Ball chasing your mouse clicks
+
+## Technologies Used
+
+This project uses the following technologies:
+- HTML5
+- CSS3
+- Sass
+- Javascript
+- PostCSS
+- Node-Sass
+- Autoprefixer
+- GSAP
 
 ## Installation
 
@@ -48,3 +55,5 @@ To use this project, follow these steps:
 - Your message
 Click on the 'SEND MESSAGE' button to send me your message
 I will receive the message and answer you asap
+8. Have fun with the ball chasing your mouse clicks
+9. If you already scroll down below the 'Home' section, the navigation menu will disappear. Scroll up to reveal the navigation menu if you wish to use it for navigating through the website

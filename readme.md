@@ -1,4 +1,7 @@
 ## Portfolio Website
+Welcome to my portfolio website! This is where you can find information about me and my work
+
+This app is currently deployed on Netlify at [https://erdemelvan.netlify.app/](https://erdemelvan.netlify.app/).
 
 ## Prequisites
 To run this project, you'll need the following software:
@@ -37,7 +40,7 @@ To install this project, follow these steps:
 1. Clone the repository to your local machine
 2. Navigate to the project directory in your terminal or command prompt
 3. Run `npm install` to install the project dependencies
-4. Run 'npm run build:css' to convert your sass into css
+4. Run `npm run build:css` to convert your sass into css
 5. Run `npm run start` to start the development server
 
 ## Usage

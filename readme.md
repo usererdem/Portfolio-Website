@@ -57,3 +57,7 @@ Click on the 'SEND MESSAGE' button to send me your message
 I will receive the message and answer you asap
 8. Have fun with the ball chasing your mouse clicks
 9. If you already scroll down below the 'Home' section, the navigation menu will disappear. Scroll up to reveal the navigation menu if you wish to use it for navigating through the website
+
+## License
+
+This project is licensed under the terms of the MIT License. See the `LICENSE` file for more information.

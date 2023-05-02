@@ -83,6 +83,18 @@
     align-items: center;
     /* justify-content: center; */
 
+    &--tailwind {
+      fill: #06b6d4;
+    }
+
+    &--nextjs {
+      fill: #fff;
+    }
+
+    &--prisma {
+      fill: #fff;
+    }
+
     svg {
       background: $color-grey-dark-4;
       height: 4rem;
